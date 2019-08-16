@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<!-- (%F:%L) %logger{%36}-->
+	<Appenders>
+		<Console name="Console" target="SYSTEM.OUT">
+			<PatternLayout
+				pattern="%d{ISO8601} [%t] %-5level (%F:%L) - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="root" level="info" additivity="false">
+			<AppenderRef ref="Console"></AppenderRef>
+		</Logger>
+
+	</Loggers>
+
+</Configuration>
